@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:weer;assembly=weer"
+             mc:Ignorable="d"
+             xmlns:flex="clr-namespace:Flex.Controls;assembly=Flex"
+             x:Class="weer.MainPage">
+
+    <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="Center"
+            BackgroundColor="#405162">
+
+        <Grid Margin="70,25,70,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Grid.Column="0" Width="*"/>
+                <ColumnDefinition Grid.Column="1" Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+            </Grid.RowDefinitions>
+
+            <local:CustomEntry 
+                Placeholder="Plaatnaam / Postcode" 
+                x:Name="PlaatsInput" 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                PlaceholderColor="#A8A8A8" 
+                TextColor="#ECF0F1" 
+                HeightRequest="35"
+                FontSize="18" 
+                Margin="0,0,8,0"
+                MinimumHeightRequest="30"
+                TranslationY="7"
+                />
+
+            <local:CustomButtonRB 
+                Clicked="ZoekPlaatsButtonClick" 
+                Grid.Row="0"
+                Grid.Column="1" 
+                WidthRequest="35" 
+                HeightRequest="35" 
+                Margin="0"
+                x:Name="ButtonPlaatsInput"
+                ImageSource="searchicon.png"                
+                />
+        </Grid>
+
+        <Label 
+            x:Name="TitelPlaats" 
+            HorizontalOptions="Center" 
+            FontSize="44" 
+            TextColor="#ECF0F1"
+            Margin="0,5,0,5"
+            />
+
+        <Frame 
+            BackgroundColor="#2C3E50"
+            HeightRequest="120" 
+            WidthRequest="220" 
+            HorizontalOptions="Center" 
+            Margin="0,0,0,0"
+            CornerRadius="20"          
+            BorderColor="#2C3E50"
+            MinimumHeightRequest="140"
+            >
+            <Grid Margin="0,0,0,0" BackgroundColor="#2C3E50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Grid.Column="0" Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    x:Name="Temperatuur"
+                    FontSize="86"             
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Grid.RowSpan="3"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Start"       
+                    TextColor="#ECF0F1"
+                    Margin="0,-20,0,-10"
+                />
+
+                <Label 
+                    x:Name="MinMaxTemp"
+                    FontSize="16"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Start"
+                    TextColor="#ECF0F1"
+                />
+
+                <Label 
+                    x:Name="DatumGegevens"
+                    FontSize="14"
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Start"
+                    TextColor="#ECF0F1"
+                />
+
+            </Grid>
+        </Frame>
+
+        <Frame
+            BackgroundColor="#ECF0F1"
+            HeightRequest="200" 
+            WidthRequest="220" 
+            HorizontalOptions="Center" 
+            Margin="0,-20,0,0"
+            CornerRadius="20"          
+            BorderColor="#ECF0F1"
+            MinimumHeightRequest="260">
+
+            <Grid Margin="0,0,0,0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Grid.Column="0" Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label 
+                    x:Name="Windsnelheid" 
+                    FontSize="18"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="0"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Start"
+                    TextColor="#2C3E50"
+                    />
+
+                <Label 
+                    x:Name="Description" 
+                    FontSize="18"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="1"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    TextColor="#2C3E50"
+                    />
+
+                <Image Source="Iconweathersunrise.png" Aspect="AspectFit" Grid.Column="0" Grid.Row="2"/>
+                <Image Source="Iconweathersunset.png" Aspect="AspectFit" Grid.Column="1" Grid.Row="2"/>
+
+                <Label 
+                    x:Name="Sunrise" 
+                    FontSize="18"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    TextColor="#2C3E50"
+                    />
+                <Label 
+                    x:Name="Sunset"
+                    FontSize="18"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    TextColor="#2C3E50"   
+                    />
+            </Grid>
+        </Frame>
+
+        <Grid
+            VerticalOptions="EndAndExpand"
+            HeightRequest="62"
+            HorizontalOptions="Fill"
+            >
+            <flex:FlexButton Grid.Row="0" Grid.Column="0" BackgroundColor="#16A085" HighlightBackgroundColor="#16A085" Icon="Iconmaterialhome.png" IconTintEnabled="False" />
+            <flex:FlexButton Grid.Row="0" Grid.Column="1" BackgroundColor="#2C3E50" HighlightBackgroundColor="#16A085" Text="5d" FontSize="34" FontAttributes="Bold" />
+            <flex:FlexButton Grid.Row="0" Grid.Column="2" BackgroundColor="#2C3E50" HighlightBackgroundColor="#16A085" Text="14d" FontSize="34" FontAttributes="Bold" />
+            <flex:FlexButton Grid.Row="0" Grid.Column="3" BackgroundColor="#2C3E50" HighlightBackgroundColor="#16A085" Icon="Iconmaterialsettings.png" IconTintEnabled="False" />
+        </Grid>
+    </StackLayout>
+</ContentPage>

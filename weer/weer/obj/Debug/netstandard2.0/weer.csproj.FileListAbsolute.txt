@@ -1,0 +1,15 @@
+C:\Users\Ruben\source\repos\weer\weer\weer\bin\Debug\netstandard2.0\weer.deps.json
+C:\Users\Ruben\source\repos\weer\weer\weer\bin\Debug\netstandard2.0\weer.dll
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\weer.csproj.CoreCompileInputs.cache
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\weer.AssemblyInfoInputs.cache
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\weer.AssemblyInfo.cs
+C:\Users\Ruben\source\repos\weer\weer\weer\bin\Debug\netstandard2.0\weer.pdb
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\weer.dll
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\weer.pdb
+C:\Users\Ruben\source\repos\weer\weer\weer\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Ruben\source\repos\weer\weer\weer\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Ruben\source\repos\weer\weer\weer\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\weer.csproj.CopyComplete
+C:\Users\Ruben\source\repos\weer\weer\weer\obj\Debug\netstandard2.0\XamlC.stamp
